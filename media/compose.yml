@@ -134,7 +134,7 @@ services:
       - TZ=${TZ}
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./radarr:/config
+      - /radarr:/config
       - /data:/data
     ports:
       - 7878:7878
@@ -210,8 +210,8 @@ services:
       INITIAL_ADMIN_EMAIL: ${ADMIN_EMAIL}
       INITIAL_ADMIN_PASSWORD: ${ADMIN_PASSWORD}
     volumes:
-      - ./npm/config:/config
-      - ./npm/letsencrypt:/etc/letsencrypt
+      - ./npm:/config
+      - ./letsencrypt:/etc/letsencrypt
     healthcheck:
       test: ["CMD", "/usr/bin/check-health"]
       interval: 20s
