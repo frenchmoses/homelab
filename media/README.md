@@ -111,8 +111,8 @@ sudo mkdir /docker && cd /docker && sudo chown -R 1000:1000 /docker
 ```
 Grab the `docker-compose` and `.env.template` file from this repo. The `.env` file is what docker will you use and what you will modify. The template is a safe backup. 
 ```
-wget https://github.com/frenchmoses/homelab/blob/main/media/compose.yml && \
-wget https://github.com/frenchmoses/homelab/blob/main/media/.env.template && \
+wget https://github.com/frenchmoses/homelab/refs/heads/main/media/compose.yml && \
+wget https://github.com/frenchmoses/homelab/refs/heads/main/media/.env.template && \
 cp .env.template .env && \
 chmod 600 .env
 ```
