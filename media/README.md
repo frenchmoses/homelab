@@ -3,7 +3,7 @@
 
 Sign in as root and install some helpful tools  
 ```
-apt install sudo tree wget -y && apt update
+apt install sudo tree resolvconf wget -y && apt update
 ```
 Asign your normal user to the sudo group
 ```
