@@ -118,7 +118,7 @@ chmod 600 .env
 ```
 Create the `/data` pathing and assign permissions
 ```
-mkdir -p /data/{media/{tv,movies,music,books},downloads/{complete/{tv,movies,music,books},incomplete/{tv,movies,music,books}}} && \
+sudo mkdir -p /data/{media/{tv,movies,music,books},downloads/{complete/{tv,movies,music,books},incomplete/{tv,movies,music,books}}} && \
 sudo chown -R 1000:1000 /data
 ```
 Use `tree` to see the sctucture
