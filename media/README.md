@@ -30,16 +30,7 @@ iface ens18 inet static
 	gateway 10.0.0.1
     dns-nameservers 1.1.1.1 8.8.8.8
 ```
-4. Check DNS
-```
-nano /etc/resolv.conf
-```
-5. Add these lines if something similar isnt already present
-```
-nameserver 1.1.1.1
-nameserver 8.8.8.8
-```
-6. Restart networking
+4. Restart networking
 ```
 systemctl restart networking
 ```
