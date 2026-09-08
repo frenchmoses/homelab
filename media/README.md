@@ -65,7 +65,7 @@ Add Docker's official GPG key
 sudo apt update && \
 sudo apt install ca-certificates curl gnupg && \
 sudo install -m 0755 -d /etc/apt/keyrings && \
-sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg  && \
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 
@@ -107,7 +107,7 @@ sudo usermod -aG docker $USER && newgrp docker
 ```
 Create a `docker` directory, change into it, and assigned persmissions
 ```
-mkdir /docker && cd /docker && sudo chown -R 1000:1000 /docker
+sudo mkdir /docker && cd /docker && sudo chown -R 1000:1000 /docker
 ```
 Grab the `docker-compose` and `.env.template` file from this repo. The `.env` file is what docker will you use and what you will modify. The template is a safe backup. 
 ```
