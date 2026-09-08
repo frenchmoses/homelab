@@ -7,7 +7,7 @@ services:
       - PGID=1000
       - TZ=America/Los_Angeles
     volumes:
-      - ./config:/config
+      - ./jellyfin:/config
       - /data:/data
     devices:
       - /dev/dri:/dev/dri 
