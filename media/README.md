@@ -109,7 +109,7 @@ Create a `docker` directory, change into it, and assigned persmissions
 ```
 sudo mkdir /docker && cd /docker && sudo chown -R 1000:1000 /docker
 ```
-Grab the `docker-compose` and `.env.template` file from this repo. The `.env` file is what docker will you use and what you will modify. The template is a safe backup. 
+Grab the `compose` and `.env.template` file from this repo. The `.env` file is what docker will you use and what you will modify. The template is a safe backup. 
 ```
 wget https://github.com/frenchmoses/homelab/raw/refs/heads/main/media/compose.yml && \
 wget https://github.com/frenchmoses/homelab/raw/refs/heads/main/media/.env.template && \
